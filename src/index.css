@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Montserrat", sans-serif;
+  --color-gold: #C5A059;
+  --color-dark: #0A0A0A;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  @apply bg-dark text-white font-sans antialiased;
+}
+
+.serif {
+  @apply font-serif;
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #C5A059 0%, #E2C68E 50%, #C5A059 100%);
+}
+
+.text-gold {
+  color: #C5A059;
+}
+
+.border-gold {
+  border-color: #C5A059;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C5A059;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E2C68E;
+}
